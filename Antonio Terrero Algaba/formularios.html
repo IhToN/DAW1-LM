@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+<h1>Formulario de alta</h1>
+<form action="#" method="post" enctype="multipart/form-data">
+
+    <fieldset>
+        <legend>Datos Generales</legend>
+
+        <input type="text" name="nombre" id="nombre" size="50" maxlength="250"/> <br/>
+        <label for="nombre">Nombre</label> <br/>
+
+        <input name="apellidos" id="apellidos" size="50" maxlength="250"/> <br/>
+        <label for="apellidos">Apellidos</label>
+        <br/><br/>
+        No te olvides de escribir también tu segundo apellido
+        <br/><br/>
+        <input name="direccion" id="direccion" size="50" maxlength="250"/> <br/>
+        <label for="direccion">Calle, número, piso, puerta</label> <br/>
+        <br/>
+        <label for="cp">Código postal</label>
+        <input name="cp" id="cp" size="25" maxlength="5"/>
+        <label for="municipio">Municipio</label>
+        <input name="municipio" id="municipio" size="25" maxlength="250"/>
+        <br/><br/>
+        <label for="provincia">Provincia</label>
+        <select name="provincia" id="provincia">
+            <option value="none"></option>
+            <option value="granada">Granada</option>
+        </select>
+        <label for="pais">País</label>
+        <select name="pais" id="pais">
+            <option value="none"></option>
+            <option value="espana">España</option>
+        </select><br/>
+    </fieldset>
+
+    <fieldset>
+        <legend>Otros Datos</legend>
+
+        <label for="email">Email</label>
+        <input type="text" size="25" id="email" name="email"/>
+        <label for="fijo">Tel. Fijo</label>
+        <input type="text" size="25" id="fijo" name="fijo"/>
+        <label for="movil">Tel. Movil</label>
+        <input type="text" size="25" id="movil" name="movil"/>
+        <br/><br/>
+        Sin prefijo de país y sin espacios en blanco
+        <br/><br/>
+        <input type="submit" value="Darme de alta &rightarrow;"/>
+
+    </fieldset>
+</form>
+<a href="index.html">Volver</a>
+
+</body>
+</html>
