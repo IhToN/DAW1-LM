@@ -100,7 +100,7 @@ img {
 }
 
 #cabecera h1 {
-    background: url(../comun/imagenes/logo.gif) no-repeat -5px -10px;
+    background: url('changeme.png') no-repeat -5px -10px;
     width: 180px;
 }
 
@@ -111,7 +111,7 @@ img {
 #menu {
     margin-bottom: .5em;
     border-bottom: 1px solid #004C99;
-    background: url(../comun/imagenes/fondo_menu.gif) repeat-x;
+    background: url('changeme.png') repeat-x;
 }
 
 #contenido {
