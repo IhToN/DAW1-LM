@@ -1,0 +1,9 @@
+p {
+    border: solid;
+    padding: 0.5em;
+}
+
+a {
+    border: dashed red;
+    padding: 0.5em;
+}

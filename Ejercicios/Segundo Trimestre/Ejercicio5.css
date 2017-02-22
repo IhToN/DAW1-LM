@@ -1,3 +1,5 @@
+/*Base*/
+
 ul, ul li {
     margin: 0;
     padding: 0;
@@ -17,10 +19,13 @@ img {
     border: none;
 }
 
+
+/*Layout*/
+
 #contenedor {
     width: 90%;
     max-width: 900px;
-    width: 100%;
+    width: expression(document.body.clientWidth > 901? "900px": "auto");
     margin: 0 auto;
 }
 
@@ -60,6 +65,9 @@ img {
     clear: both;
 }
 
+
+/*Header*/
+
 #cabecera #logo {
     float: left;
 }
@@ -68,15 +76,24 @@ img {
     float: right;
 }
 
+
+/*Menu*/
+
 #menu ul#menu_principal li {
     display: inline;
     float: left;
 }
 
+
+/*Main*/
+
 #contenido #principal .articulo img {
     width: 100px;
     float: left;
 }
+
+
+/*Footer*/
 
 #pie .enlaces {
     float: left;
@@ -85,6 +102,9 @@ img {
 #pie .copyright {
     float: right;
 }
+
+
+/*EJERCICIO============================================================= */
 
 #cabecera, #menu, #lateral, #lateral #noticias, #lateral #publicidad, #contenido, #contenido #principal, #contenido #secundario, #pie {
     padding: .5em;
@@ -100,8 +120,7 @@ img {
 }
 
 #cabecera h1 {
-    background: url('changeme.png') no-repeat -5px -10px;
-    width: 180px;
+    background: url(Imagenes/logo.gif) no-repeat -5px -10px;
 }
 
 #cabecera h1 span {
@@ -111,7 +130,7 @@ img {
 #menu {
     margin-bottom: .5em;
     border-bottom: 1px solid #004C99;
-    background: url('changeme.png') repeat-x;
+    background: url(Imagenes/fondo_menu.gif) repeat-x;
 }
 
 #contenido {

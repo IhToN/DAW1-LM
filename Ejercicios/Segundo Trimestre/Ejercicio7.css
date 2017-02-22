@@ -1,10 +1,10 @@
-/*ALL*/
+/*-- Básico ----------------------------------------------------------*/
 ul, ul li { margin: 0; padding: 0; list-style: none; }
 h1, h2, h3, p, form { margin: 0; padding: 0; }
 .clear { clear: both; }
 img { border: none; }
 
-/*LAYOUT*/
+/*-- Layout ----------------------------------------------------------*/
 #contenedor {
   width: 90%;
   max-width: 900px;
@@ -24,22 +24,29 @@ img { border: none; }
 #contenido #secundario { float: right; width: 20%; }
 #pie { clear: both; }
 
-/*HEADER*/
+/*-- Cabecera --------------------------------------------------------*/
 #cabecera #logo { float: left; }
 #cabecera #buscador { float: right; }
 
-/*MENU*/
+/*-- Menu ------------------------------------------------------------*/
 #menu ul#menu_principal li { display: inline; float: left; }
 
-/*MAIN*/
+/*-- Sección Principal -----------------------------------------------*/
 #contenido #principal .articulo img { width: 100px; float: left; }
 
-/*FOOT*/
+/*-- Pie de página ---------------------------------------------------*/
 #pie .enlaces   { float: left; }
 #pie .copyright { float: right; }
 
-/ STYLES
+/* === IMPORTANTE ===
+   A partir de aquí, se pueden añadir todos los estilos propios que
+   sean necesarios.
+   ================= */
 
+body {
+  font: .9em/1.4 Arial, Helvetica, sans-serif;
+  color: #000;
+}
 
 #cabecera,
 #menu,
@@ -56,15 +63,34 @@ img { border: none; }
 
 #lateral {
   padding: 0;
+  font-size: .9em;
 }
 
 #cabecera {
   padding: 1em;
 }
 
+#cabecera h1 {
+  background: url(Imagenes/logo.gif) no-repeat -5px -5px;
+}
+
+#cabecera h1 span {
+  visibility: hidden;
+}
+
 #menu {
   margin-bottom: .5em;
   border-bottom: 1px solid #004C99;
+  background: url(Imagenes/fondo_menu.gif) repeat-x;
+}
+
+#menu li {
+  margin-right: 1em;
+  font-size: 1.3em;
+}
+
+#menu li a {
+  color: #FFF;
 }
 
 #contenido {
@@ -80,15 +106,44 @@ img { border: none; }
   border: 1px solid #C60;
 }
 
+#contenido #secundario h2 {
+  background: #DB905C;
+  padding: .2em;
+  font-size: 1em;
+  color: #FFF;
+}
+
+#contenido #secundario p {
+  margin: .5em 0;
+}
+
 #pie {
   padding: .5em 0;
   margin-top: 1em;
   border-top: 1px solid #C5C5C5;
   border-bottom: 1px solid #C5C5C5;
+  background: #F8F8F8;
+  color: #555;
+  font-size: .75em;
 }
 
 #contenido #principal .articulo {
   margin-bottom: 1em;
+}
+
+#contenido #principal .articulo p {
+  margin: .3em 0;
+}
+
+#contenido #principal .articulo a {
+  color: #C60;
+}
+
+#contenido #principal .articulo h2 {
+  color: #C60;
+  font-size: 1.6em;
+  line-height: 1.2;
+  margin-bottom: .3em;
 }
 
 #contenido #principal .articulo img {
@@ -97,10 +152,25 @@ img { border: none; }
 
 #lateral #noticias {
   border: 1px solid #C5C5C5;
+  background: #F8F8F8;
+}
+
+#lateral #noticias h3 {
+  color: #036;
+}
+
+#lateral #noticias span.fecha {
+  display: block;
+  color: #999;
 }
 
 #lateral #publicidad {
   margin-top: 1em;
   border: 1px dashed #C60;
+  background: #FFF6CD;
+  color: #555;
 }
-/
+
+#lateral #publicidad a {
+  color: #C60;
+}
