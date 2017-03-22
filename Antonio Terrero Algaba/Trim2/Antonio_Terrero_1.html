@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Antonio Terrero Ejercicio 1</title>
+    <style type="text/css">
+        h2 {
+            font-style: italic;
+            margin: 10px 10px 50px;
+            font-family: "Arial Black", sans-serif;
+        }
+        .menu {
+            list-style: none;
+            display: flex;
+            flex-flow: column wrap;
+            width: 50%;
+            position: relative;
+            font-family: "Rage Italic", sans-serif;
+        }
+        .menu > li {
+            flex: 1 0 10px;
+            margin: 10px;
+        }
+
+        .menu > li a {
+            padding: 10px;
+            text-transform: uppercase;
+            font-style: normal;
+            text-decoration: inherit;
+            color: inherit;
+        }
+
+        .menu > li a:hover {
+            background-color: #cacaca;
+            color: #fff;
+        }
+
+        .submenu {
+            list-style: none;
+            display: flex;
+            flex-flow: row wrap;
+            position: absolute;
+            margin-top: -20px;
+            left: 150px;
+            font-family: "Rage Italic", sans-serif;
+        }
+
+        .submenu > li {
+            margin-right: 50px;
+        }
+        
+        .submenu > li a {
+            color: #cacaca;
+            text-transform: lowercase;
+            font-style: normal;
+            text-decoration: inherit;
+        }
+        
+        .submenu > li a:hover {
+            color: #000;
+            font-weight: bold;
+            background-color: transparent;
+        }
+        
+    </style>
+</head>
+<body>
+<ul class="menu">
+    <h2>Menu Vertical</h2>
+    <li><a href="#">Opcion 1</a></li>
+    <li><a href="#">Opcion 2</a>
+        <ul class="submenu">
+            <li><a href="#">Subopcion 1</a></li>
+            <li><a href="#">Subopcion 2</a></li>
+            <li><a href="#">Subopcion 3</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Opcion 3</a></li>
+    <li><a href="#">Opcion 4</a></li>
+</ul>
+</body>
+</html>
