@@ -7,9 +7,7 @@
     width: 900px;
     padding: 0.5em;
     float: right;
-    background-image: url(../imagenes/cabecera.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url('../imagenes/cabecera.png') no-repeat center;
     color: #FFF;
 }
 
@@ -39,15 +37,8 @@
     position: fixed;
     bottom: 0px;
     background-color: #FDF4B5;
-    border-top-width: thin;
-    border-right-width: thin;
-    border-bottom-width: thin;
-    border-left-width: thin;
+    border: thin #03C;
     border-top-style: double;
-    border-top-color: #03C;
-    border-right-color: #03C;
-    border-bottom-color: #03C;
-    border-left-color: #03C;
     border-bottom-style: double;
 }
 
@@ -63,16 +54,14 @@
     width: 245px;
     clear: none;
     margin-right: 10px;
-    background-image: url(../imagenes/flateral.gif);
-    background-repeat: repeat-y;
+    background: url(../imagenes/flateral.gif) repeat-y;
 }
 
 #principal {
     float: left;
     width: 400px;
     clear: none;
-    background-image: url(../imagenes/fprincipal.jpg);
-    background-repeat: repeat-y;
+    background: url(../imagenes/fprincipal.jpg) repeat-y;
 }
 
 #lateralderecho {
@@ -81,12 +70,8 @@
     clear: none;
     margin-left: 4px;
     background-image: url(../imagenes/fderecho.gif);
-    border-left-width: thin;
-    border-bottom-width: thin;
-    border-left-style: solid;
-    border-bottom-style: solid;
-    border-left-color: #999;
-    border-bottom-color: #999;
+    border-bottom: thin solid #999;
+    border-left: thin solid #999;
 }
 
 #menu ul {
@@ -120,24 +105,19 @@
 
 #menu li a:hover {
     list-style-type: none;
-    background-image: url(../imagenes/orange_bullet.gif);
-    background-repeat: no-repeat;
-    background-position: left;
+    background: url(../imagenes/arrow_breadcrumbs.png) no-repeat left;
     color: #F2C526;
     text-shadow: 0px 0px 5px #F9FC8D;
 }
 
 body {
-    background-image: url(../imagenes/fondo.gif);
-    background-repeat: repeat-x;
-    background-color: #F2F5FE;
+    background: #F2F5FE url(../imagenes/fondo.gif) repeat-x;
     font-family: Verdana, Geneva, sans-serif;
     font-size: 14px;
 }
 
 .articulo {
-    background-image: url(../imagenes/farticulo.jpg);
-    background-repeat: no-repeat;
+    background: url(../imagenes/farticulo.jpg) no-repeat;
     padding: 20px;
 }
 
@@ -150,15 +130,10 @@ body {
 }
 
 #noticias, #enlaces, #publicidad {
-    background-image: url(../imagenes/fnoticias.gif);
-    background-repeat: no-repeat;
+    background: url(../imagenes/fnoticias.gif) no-repeat;
     padding: 5px;
-    border-right-width: thin;
-    border-bottom-width: thin;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-right-color: #999;
-    border-bottom-color: #999;
+    border-right: thin solid #999;
+    border-bottom: thin solid #999;
 }
 
 h3 {
